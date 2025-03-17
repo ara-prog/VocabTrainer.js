@@ -12,7 +12,7 @@ export default function VocabTrainer() {
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-        "https://sheets.googleapis.com/v4/spreadsheets/1n5TBrOe5uOo79q--StsoiM1pDM7885kJ-ZeBDFtD_UQ/values/Sheet1?key=YOUR_API_KEY"
+        "https://sheets.googleapis.com/v4/spreadsheets/1n5TBrOe5uOo79q--StsoiM1pDM7885kJ-ZeBDFtD_UQ/values/Sheet1?key=AIzaSyCmYMv_BupQsyfwEvJ1bLSdXd3JL9QbN6g"
       );
       const data = await response.json();
       const formattedData = data.values.slice(1).map(([id, wordA, wordB, exampleA, exampleB, imageUrl, correct, incorrect]) => ({
